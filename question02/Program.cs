@@ -8,10 +8,10 @@ namespace question02
 
         static void Main(string[] args)
         {
-            string[] fruits = new string[5] {"Apple", "Banana", "Coconut", "Mandarin"};
+            string[] fruits = new string[5] {"Apple", "Banana", "Coconut", "Mandarin", "Pear"};
 
-            foreach(var fruit in fruits) {
-                Console.Write(fruit);
+            foreach(string fruit in fruits) {
+                Console.WriteLine(fruit);
             }
         }
     }
