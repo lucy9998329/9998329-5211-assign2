@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 
 namespace question03
@@ -7,13 +8,32 @@ namespace question03
     {
         static void Main(string[] args)
         {
-            string[] fruitsArray = new string[] {"Banana", "Grapefruit", "Tomato", "Oranges"};
+            Stopwatch sw = new Stopwatch();
 
-            //List<string> fruitsArray = new List<string> {"Banana", "Grapefruit", "Tomato", "Oranges"};
+            sw.Start();
+
+            string[] fruitsArray = new string[] {"Banana", "Grapefruit", "Tomato", "Oranges"};
 
             foreach(var fruit in fruitsArray) {
                 Console.WriteLine(fruit);
             }
+
+            sw.Stop();
+            Console.WriteLine(sw.Elapsed);
+
+            sw.Reset();
+
+            sw.Start();
+
+            List<string> fruitsArray2 = new List<string> {"Banana", "Grapefruit", "Tomato", "Oranges"};
+
+            foreach(var x in fruitsArray) {
+                Console.WriteLine(x);
+            }
+
+            sw.Stop();
+            Console.WriteLine(sw.Elapsed);
+            }
         }
     }
-}
+
