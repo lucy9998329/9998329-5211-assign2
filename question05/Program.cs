@@ -8,10 +8,10 @@ namespace question05
         {
             Console.WriteLine("Print out the division table for:");
 
-            var number = Console.ReadLine();
+            int number = Console.ReadLine();
 
-            for(var i = 0; i < 12; i++) {
-                var a = i + 1;
+            for(int i = 0; i < 12; i++) {
+                int a = i + 1;
                 Console.WriteLine($"{a} x {number} = {a / number}");
             }
         }
