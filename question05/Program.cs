@@ -10,6 +10,7 @@ namespace question05
 
             double number = double.Parse(Console.ReadLine());
 
+
             for(double i = 0; i < 12; i++) {
 
                 if(i < 9)
@@ -19,8 +20,10 @@ namespace question05
                 }
                 
                 double a = i + 1;
+
+                double result = Math.Round(a/number, 2);
                 
-                Console.WriteLine($"{a} / {number} = {a / number}");
+                Console.WriteLine($"{a} / {number} = {result}");
             }
         }
     }
