@@ -6,12 +6,21 @@ namespace question04
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Print out the reverse timestables (highest number first) for:");
+            
+            int number = int.Parse(Console.ReadLine());
+            
 
-            var number = Console.ReadLine();
+            for(int i = 13; i > 0; i--) 
+            {
 
-            for(var i = 0; i < 12; i++) {
-                var a = i + 1;
+                if(i < 11) 
+                {
+                    Console.Write("0");
+                }
+                
+                int a = i - 1;
                 Console.WriteLine($"{a} x {number} = {a * number}");
             }
         }
