@@ -27,7 +27,7 @@ namespace question03
 
             List<string> fruitsArray2 = new List<string> {"Banana", "Grapefruit", "Tomato", "Oranges"};
 
-            foreach(var x in fruitsArray) {
+            foreach(var x in fruitsArray2) {
                 Console.WriteLine(x);
             }
 
